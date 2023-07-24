@@ -204,9 +204,7 @@ section .title::after {
   filter: brightness(90%);
 }
 
-/* home section styling */
-/* bgc considered */
-/* https://images.pexels.com/photos/168766/pexels-photo-168766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+
 .home {
   display: flex;
   background: url("Ns_Images/MM.jpg") no-repeat center;
@@ -301,7 +299,7 @@ section .title::after {
 }
 
 .about .about-content .right .text span {
-  color: red;
+  color: orange;
 
 }
 
@@ -323,13 +321,13 @@ section .title::after {
 }
 
 .about .about-content .right a:hover {
-  color: orange;
+  color: rgb(255, 168, 8);
   background: none;
 }
 
 .about .title::after {
   background-image: url("");
-  color: red;
+  color: rgb(255, 175, 27);
 }
 
 /* services section styling */
@@ -664,6 +662,86 @@ section .title::after {
   background-color: orange;
   color: #fff;
 }
+
+
+/* teams section styling */
+.services .title::after,
+.teams .title::after{
+    /* background: #111; */
+    content: "what i know";
+}
+
+.teams .carousel .card{
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  color:white;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card a{
+  text-decoration: none;
+  color: white;
+}
+.teams .carousel .card:hover{
+  background:orange ;
+}
+.teams .carousel .card .box{
+ 
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+  transform: scale(1.05);
+}
+.teams .carousel .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  color:white;
+  margin: 10px 0 7px 0;
+}
+.teams .carousel .card .text p{
+  
+  color:white;
+}
+.teams .carousel .card img{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid orange;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+  border-color: #fff;
+}
+/* .owl-dots{
+  text-align: center;
+  margin-top: 10px;
+}
+.owl-dot{
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid darkcyan !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+} */
+.owl-dot.active,
+.owl-dot:hover{
+  background: orange !important;
+}
+
 
 .contact .title::after {
   content: "get in touch";
