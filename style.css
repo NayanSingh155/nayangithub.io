@@ -119,13 +119,11 @@ section .title::after {
 }
 
 
-.navbar .logo img {
-  width: 15%;
-}
+
 
 .navbar .logo a {
   color: #fff;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
 }
